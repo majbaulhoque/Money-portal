@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1 class="text-5xl text-center mt-6">Let's get some <span class="font-semibold text-violet-600">Mooooony</span>!!!</h1>
+        <h1 class="text-5xl text-center mt-24">Let's get some <span class="font-semibold text-violet-600">Moo<span class="text-fuchsia-400">oo</span>oony</span>!!!</h1>
     </header>
     <main>
         <section class="mt-16">
@@ -24,6 +24,26 @@
                 <div class="bg-violet-600 p-8 rounded-xl">
                     <h4 class="text-2xl">Blance</h4>
                     <h2 class="text-5xl">$1200</h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- Deposit and withdraw -->
+        <section class="mt-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 w-9/12 mx-auto gap-4 text-white">
+                <div class="bg-fuchsia-600 p-8 rounded-2xl">
+                    <h4 class="text-2xl mb-4 ml-8">Please Deposit</h4>
+                    <div class="ml-20">
+                        <input class="w-9/12 px-3 block text-black" type="text" name="" id="deposit-field" placeholder="$ Amount you want to deposit">
+                        <button id="btn-deposit" class="bg-sky-300 hover:bg-sky-500 px-6 py-2 text-black font-medium rounded-xl mt-4">Deposit</button>
+                    </div>
+                </div>
+                <div class="bg-sky-400 p-8 rounded-2xl">
+                    <h4 class="text-2xl mb-4 ml-8">Please Withdraw</h4>
+                    <div class="ml-20">
+                        <input class="w-9/12 px-3 block text-black" type="text" name="" id="user-id" placeholder="$ Amount you want to withdraw">
+                        <button id="deposit" class="bg-fuchsia-300 hover:bg-sky-500 px-6 py-2 text-black font-medium rounded-xl mt-4">Withdraw</button>
+                    </div>
                 </div>
             </div>
         </section>

@@ -10,6 +10,7 @@ document.getElementById('btn-submit').addEventListener('click', function(){
     // get the value from the element
     const passField = document.getElementById('pass-id');
     const password = passField.value;
+    console.log(email,password)
 
     // ! Danger: DO NOT VERIFY EMAIL password on the client site
     // step-4 verify email and password
@@ -19,4 +20,18 @@ document.getElementById('btn-submit').addEventListener('click', function(){
     }else{
         alert('Invalid user!')
     }
+})
+
+
+// ! Bank html part
+
+// ? step-1: add event listener to the deposit button
+let depositInput = 0;
+document.getElementById('btn-deposit').addEventListener('click',function(){
+    // ? step-2: Get the deposit amount from the deposit input field
+    let depositField = document.getElementById('deposit-field');
+    
+    depositInput = depositField.value;
+    console.log(depositInput);
+    // console.log(depositField)
 })
