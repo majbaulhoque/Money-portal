@@ -23,15 +23,6 @@ document.getElementById('btn-submit').addEventListener('click', function(){
 })
 
 
-// ! Bank html part
 
-// ? step-1: add event listener to the deposit button
-let depositInput = 0;
-document.getElementById('btn-deposit').addEventListener('click',function(){
-    // ? step-2: Get the deposit amount from the deposit input field
-    let depositField = document.getElementById('deposit-field');
     
-    depositInput = depositField.value;
-    console.log(depositInput);
-    // console.log(depositField)
-})
+    
