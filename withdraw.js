@@ -23,15 +23,23 @@ document.getElementById('btn-withdraw').addEventListener('click',function(){
     const previousWithdrawTotalString = previousWithdrawElement.innerText;
     const previousWithdrawTotal = parseFloat(previousWithdrawTotalString);
 
-    // ! step-4:
-
-    const currentWithdrawTotal = previousWithdrawTotal + newWithdrawAmount;
-    previousWithdrawElement.innerText = currentWithdrawTotal;
-
+    
     // ! step-5
     const balanceTotalElement = document.getElementById('balance-id');
     const previousBalanceTotalString = balanceTotalElement.innerText;
     const previousBalanceTotal = parseFloat(previousBalanceTotalString);
+
+    withdrawField.value = '';
+
+    if(newWithdrawAmount > previousBalanceTotal){
+        alert('This transaction is not possible');
+        return;
+    }
+
+    // ! step-4:
+
+    const currentWithdrawTotal = previousWithdrawTotal + newWithdrawAmount;
+    previousWithdrawElement.innerText = currentWithdrawTotal;
 
     // ! step-6
     const newBalanceTotal = previousBalanceTotal - newWithdrawAmount;
